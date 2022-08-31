@@ -1,11 +1,11 @@
-/*  Set up a benchmark where you call the access function with a larger and larger n.
+package introduktion;/*  Set up a benchmark where you call the access function with a larger and larger n.
     Present your conclusions in a nice table and pay attention
     to the number of significant figures that you use.
 */
 
 import java.util.Random;
 
-public class Main {
+public class Task1 {
     public static void main(String args[]) {
         for (int i = 0; i < 10; i++) {
             System.out.println("resolution " + access(1000) + " nanoseconds");
