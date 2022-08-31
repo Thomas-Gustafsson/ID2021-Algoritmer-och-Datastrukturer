@@ -5,14 +5,14 @@ package introduktion;/*  Set up a benchmark where you call the access function w
 
 import java.util.Random;
 
-public class Task1 {
+public class random {
     public static void main(String args[]) {
         for (int i = 0; i < 10; i++) {
-            System.out.println("resolution " + access(1000) + " nanoseconds");
+            System.out.println("resolution " + function(1000) + " nanoseconds");
         }
     }
 
-    private static double access(int n) {
+    private static double function (int n) {
         int k = 1_000_000;
         int l = n;
         Random rnd = new Random();

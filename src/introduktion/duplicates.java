@@ -1,5 +1,5 @@
 package introduktion;
 
-public class Task2 {
+public class duplicates {
 
 }
