@@ -28,7 +28,7 @@ public class StaticStack {
     }
 
     // insert element on top of stack
-    public int pop() {
+    public static int pop() {
         if (isEmpty()) {
             throw new RuntimeException("Stack is empty");
         }
@@ -48,7 +48,7 @@ public class StaticStack {
         return top + 1;
     }
 
-    public boolean isEmpty() {
+    public static boolean isEmpty() {
         return top == - 1;
     }
 

@@ -10,6 +10,9 @@
         <language minSize="155" name="Java" />
       </Languages>
     </inspection_tool>
+    <inspection_tool class="EnhancedSwitchMigration" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myWarnOnlyOnExpressionConversion" value="true" />
+    </inspection_tool>
     <inspection_tool class="ReassignedVariable" enabled="false" level="TEXT ATTRIBUTES" enabled_by_default="false" />
   </profile>
 </component>

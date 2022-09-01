@@ -16,34 +16,34 @@ public class Calculator {
         while (ip < expr.length) {
             step();
         }
-        return stack.pop();
+        return StaticStack.pop();
     }
 
     public void step() {
         Item nxt = expr[ip++];
         switch ((nxt.getType())) {
             case ADD : {
-                int y = stack.pop();
-                int x = stack.pop();
-                stack.push(x + y);
+                int y = StaticStack.pop();
+                int x = StaticStack.pop();
+                StaticStack.push(x + y);
                 break;
             }
             case SUB : {
-                int y = stack.pop();
-                int x = stack.pop();
-                stack.push(x - y);
+                int y = StaticStack.pop();
+                int x = StaticStack.pop();
+                StaticStack.push(x - y);
                 break;
             }
             case MUL : {
-                int y = stack.pop();
-                int x = stack.pop();
-                stack.push(x * y);
+                int y = StaticStack.pop();
+                int x = StaticStack.pop();
+                StaticStack.push(x * y);
                 break;
             }
             case DIV : {
-                int y = stack.pop();
-                int x = stack.pop();
-                stack.push(x / y);
+                int y = StaticStack.pop();
+                int x = StaticStack.pop();
+                StaticStack.push(x / y);
                 break;
             }
         }
