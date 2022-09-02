@@ -9,7 +9,7 @@ public class Calculator {
     public Calculator(Item[] expr) {
         this.expr = expr;
         this.ip = 0;
-        this.stack = new StaticStack(4);
+        this.stack = new StaticStack(expr.length);
     }
 
     public int run() {
@@ -44,6 +44,9 @@ public class Calculator {
                 int y = StaticStack.pop();
                 int x = StaticStack.pop();
                 StaticStack.push(x / y);
+                break;
+            }
+            case VALUE : {
                 break;
             }
         }

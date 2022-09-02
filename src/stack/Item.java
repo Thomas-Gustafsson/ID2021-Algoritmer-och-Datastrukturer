@@ -1,6 +1,5 @@
 package stack;
-import com.sun.jdi.IntegerValue;
-import java.util.Scanner;
+
 // The Item class will have methods to construct different items, return the type and return the value.
 
 public class Item {
@@ -11,7 +10,7 @@ public class Item {
     public enum ItemType { ADD, SUB, MUL, DIV, VALUE };
 
     // default constructor
-    public Item() {
+    public Item(stack.ItemType add, int i) {
 
         this.type = ItemType.VALUE;
     }

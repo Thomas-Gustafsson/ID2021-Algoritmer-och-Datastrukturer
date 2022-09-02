@@ -1,13 +1,11 @@
 package stack;
 
-import java.sql.SQLOutput;
-
 public class Main {
 
     public static void main(String[] args) {
-        new StaticStack(4);
+        Item[] expr = {new Item(ItemType.ADD, 0) };
+        Calculator cal = new Calculator(expr);
 
-        StaticStack.push(2);
 
     }
 }
