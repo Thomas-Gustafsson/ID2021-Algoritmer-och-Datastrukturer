@@ -1,7 +1,4 @@
 package search;
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
 import java.util.Random;
 
 public class search_sorted {
