@@ -1,0 +1,31 @@
+------ Search_unsorted ------
+
+Array   Key    Time avg (ns)
+Size
+20     | 4     | 300
+40     | 8     | 300
+80     | 16    | 400
+160    | 32    | 600
+320    | 64    | 900
+640    | 128   | 1200
+1280   | 256   | 1400
+2560   | 512   | 6000
+5120   | 1024  | 9000
+10240  | 2048  | 18000
+
+------ Search_sorted ------
+Array    Time avg (ns)
+Size
+16     |  120
+32     |  300
+64     |  500
+128    |  800
+256    |  1400
+512    |  2700
+1024   |  5200
+2056   |  10500
+4096   |  21000
+8192   |  42000
+
+For a sorted array. How long time would it take to search through it, if there are 1,000,000 entries?
+2,688,000 ns (2.7 ms) ~ 3 ms.
