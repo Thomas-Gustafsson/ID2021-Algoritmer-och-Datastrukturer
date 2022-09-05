@@ -1,7 +1,5 @@
 package stack.old;
 
-import static stack.Calculator.*;
-
 public class Main {
 
         Item[] expr = {
