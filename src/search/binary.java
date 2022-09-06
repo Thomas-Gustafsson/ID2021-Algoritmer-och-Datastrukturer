@@ -39,7 +39,7 @@ public class binary {
         int key = 4;
         int size = 1024;
         int benchnum = 1;
-        for (int bench = 0; bench < 20; bench++) {
+        for (int bench = 0; bench < 19; bench++) {
             int[] test = sorted(size);
             long t0 = System.nanoTime();
             for (int rounds = 0; rounds < benchmark; rounds++) {
