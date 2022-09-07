@@ -16,16 +16,16 @@ Size
 ------ Search_sorted ------
 Array    Time avg (ns)
 Size
-16     |  120
-32     |  300
-64     |  500
-128    |  800
-256    |  1400
-512    |  2700
-1024   |  5200
-2056   |  10500
-4096   |  21000
-8192   |  42000
+Size: 20 | 0ns
+Size: 40 | 15ns
+Size: 80 | 35ns
+Size: 160 | 73ns
+Size: 320 | 155ns
+Size: 640 | 314ns
+Size: 1280 | 651ns
+Size: 2560 | 42ns
+Size: 5120 | 2587ns
+Size: 10240 | 5162ns
 
 For a sorted array. How long time would it take to search through it, if there are 1,000,000 entries?
 2,688,000 ns (2.7 ms) ~ 3 ms.
@@ -53,3 +53,28 @@ For a sorted array. How long time would it take to search through it, if there a
 |__19__|__268435456__|__30__|
 |__20__|__536870912__|__44__|
 
+------ Binary Duplicates ------
+
+Size: 20 | Time: 155.089041
+Size: 40 | Time: 275.29225
+Size: 80 | Time: 620.463833
+Size: 160 | Time: 1355.271458
+Size: 320 | Time: 3126.014708
+Size: 640 | Time: 6660.84675
+Size: 1280 | Time: 15318.222542
+Size: 2560 | Time: 69911.002958
+Size: 5120 | Time: 184868.79525
+Size: 10240 | Time: 438124.979833
+
+Comparing to duplicates
+
+Size: 20 | Time: 131815.3
+Size: 40 | Time: 181483.0
+Size: 80 | Time: 49052.875
+Size: 160 | Time: 84024.6375
+Size: 320 | Time: 892595.10625
+Size: 640 | Time: 307522.3703125
+Size: 1280 | Time: 602436.21171875
+Size: 2560 | Time: 1198075.256640625
+Size: 5120 | Time: 2404548.74453125
+Size: 10240 | Time: 4758858.362695312

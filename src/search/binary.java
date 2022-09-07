@@ -23,7 +23,8 @@ public class binary {
                 int index = (first + last)/2;
                 if (array[index] == key) {
                     // hmm what now?
-                    return true;}
+                    return true;
+                }
                 else if(array[index] < key)
                     first = index + 1;
                 else
@@ -37,7 +38,7 @@ public class binary {
 
         int benchmark = 100000000;
         int key = 4;
-        int size = 1024;
+        int size = 20;
         int benchnum = 1;
         for (int bench = 0; bench < 19; bench++) {
             int[] test = sorted(size);

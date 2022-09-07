@@ -2,6 +2,7 @@ package search;
 import java.util.Random;
 
 public class search_sorted {
+
     private static int[] sorted(int n) {
         Random random = new Random();
         int[] array = new int[n];
@@ -13,14 +14,30 @@ public class search_sorted {
         return array;
     }
 
-    public static void main(String[] args) {
-        int benchmark = 1000000;
-        long t0 = System.nanoTime();
-        for (int rounds = 0; rounds < benchmark; rounds++) {
-            sorted(8192);
+    public static boolean search(int[] array, int key) {
+        for (int index = 0; index < array.length ; index++) {
+            if (array[index] == key) {
+                return true;
+            }
         }
-        long t1 = System.nanoTime() - t0;
-        System.out.println(t1/1000000 + "ns");
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int size = 20;
+        int key = 4;
+        int benchmark = 100000000;
+        for (int times = 0; times < 10; times++) {
+            int[] array = sorted(size);
+            long t0 = System.nanoTime();
+            for (int rounds = 0; rounds < benchmark; rounds++) {
+                search(array, key);
+            }
+            long t1 = System.nanoTime() - t0;
+            System.out.println("Size: " + size + " | " + t1/benchmark + "ns");
+            size *= 2;
+            key *= 2;
+        }
     }
 }
 
