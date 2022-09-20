@@ -82,7 +82,7 @@ public class Sorts {
                         selectionSort(nums); // 1
                         break;
                     case 5:
-                        mergeSort(nums);
+                        mergeSort(nums); // 3
                         break;
                     case 6:
                         quickSort(nums);

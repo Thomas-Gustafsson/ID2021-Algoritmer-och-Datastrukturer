@@ -19,10 +19,8 @@ public class binary {
             int first = 0;
             int last = array.length-1;
             while (first <= last) {
-                // jump to the middle
                 int index = (first + last)/2;
                 if (array[index] == key) {
-                    // hmm what now?
                     return true;
                 }
                 else if(array[index] < key)
@@ -30,7 +28,6 @@ public class binary {
                 else
                     last = index - 1;
             }
-
             return false;
         }
 
