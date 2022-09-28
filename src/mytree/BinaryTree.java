@@ -89,7 +89,7 @@ class BinaryTree {
 
     // Driver Code
     public static void main(String[] args) {
-        int benches = 10000;
+        int benches = 1000;
         long t_total = 0;
         int counter = 10;
 
@@ -109,7 +109,7 @@ class BinaryTree {
                20   40  60   80 */
 
                 for (int i = 0; i < insertions; i++) {
-                    tree.insert(rnd.nextInt(1,benches));
+                    tree.insert(rnd.nextInt(1, times));
                     value += 1;
                 }
 
@@ -124,7 +124,7 @@ class BinaryTree {
 
                 insertions++;
             }
-            System.out.println(counter + " " + t_total);
+            System.out.println(counter + " " + t_total / times);
             counter++;
         }
     }
