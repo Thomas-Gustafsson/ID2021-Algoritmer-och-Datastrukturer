@@ -91,7 +91,7 @@ class BinaryTree {
     public static void main(String[] args) {
         int benches = 1000;
         long t_total = 0;
-        int counter = 10;
+        int counter = 1;
 
         for (int k = 0; k < benches; k++) {
             int times = 10, insertions = 10;
