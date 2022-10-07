@@ -9,7 +9,6 @@
       <excludeFolder url="file://$MODULE_DIR$/src/search" />
       <excludeFolder url="file://$MODULE_DIR$/src/sort" />
       <excludeFolder url="file://$MODULE_DIR$/src/linkedlist" />
-      <excludeFolder url="file://$MODULE_DIR$/src/trees" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
