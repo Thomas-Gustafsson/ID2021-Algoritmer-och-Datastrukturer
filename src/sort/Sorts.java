@@ -310,7 +310,7 @@ public class Sorts {
                 int key = nums[j];
                 nums[j] = nums[j-1];
                 nums[j-1] = key;
-                j = j-1;
+                j--;
                 }
             }
         }
