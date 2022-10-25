@@ -1,8 +1,7 @@
-package Hash;
+package hashtabeller;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
 
 public class Zip {
     Node[] data;
@@ -11,9 +10,9 @@ public class Zip {
     public class Node {
         String code;
         String name;
-        Integer pop;
+        int pop;
 
-        Node (String code, String name, Integer pop) {
+        public Node(String code, String name, int pop) {
             this.code = code;
             this.name = name;
             this.pop = pop;
@@ -22,6 +21,7 @@ public class Zip {
 
     public Zip(String file) {
         data = new Node[10000];
+
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             int i = 0;
@@ -35,18 +35,10 @@ public class Zip {
         }
     }
 
-    public int lookup(int entry) {
-        int i = 0;
-        boolean found = false;
-        while(data[i]!=null) {
-          if (!(data[i] == entry)) {
-              found = true;
-              break;
-          }
-        }
-    }
+    public int lookup() {
 
-    public static void main(String[] args) throws IOException {
-        new Zip("/Users/thomas/IdeaProjects/ID2021 - Algoritmer och Datastrukturer/src/Hash/postnummer.csv");
+
+
+        return 0;
     }
 }
